@@ -1,0 +1,26 @@
+@media screen and (max-width: 900px) {
+    .header {
+      position: sticky;
+    }
+    .header .links {
+      position: absolute;
+      width: 100%;
+      flex-direction: column;
+      padding: 10px 0;
+      left: 0;
+      background-color: linear-gradient(83.21deg, #000000, #434343);
+      bottom: -250px;
+      display: none;
+    }
+    .header .links a {
+      color: antiquewhite;
+    }
+    .header i {
+      display: block;
+      color: antiquewhite;
+      font-size: 25px;
+      cursor: pointer;
+    }
+
+    
+  }
