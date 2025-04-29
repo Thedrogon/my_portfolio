@@ -1,10 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Parisienne&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
 #landing {
   /*background: linear-gradient(83.21deg, #000000, #434343); */
   height: 100%;
-  width: 100%;
+  width: 100vw;
 }
 
 #header {
@@ -52,7 +59,6 @@
 }
 
 .links a {
-  text-transform: capitalize;
   text-decoration: none;
   color: antiquewhite;
   font-family: "Poppins";
@@ -86,18 +92,18 @@
 }
 
 .hero {
-  width: 100vw;
+  width: 100%;
   height: 500px;
   background: green;
   gap: 10px;
-  padding: 20px 8%;
+  padding: 20px 0%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .my-img{
-    width: 40%;
+    width: 50%;
     height:100%;
     background-color: aqua;
 }
@@ -111,22 +117,23 @@
 }
 
 .desc{
-    width: calc(100% - 40%);
+    width: 50%;
     height: 100%;
     flex-direction: column;
     gap: 10px;
+    color: antiquewhite;
 
 }
 .sent-1 {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 25px;
+  gap: 1px;
   color: antiquewhite;
 }
 
 .sent-1 p{
-    font-size: 28px;
+    font-size: 20px;
     font-weight: 400;
     font-family: "Poppins";
 }
@@ -134,16 +141,31 @@
 .sent-1 h2 {
   color: antiquewhite;
   font-size: 60px;
-  font-family: "Parisienne";
+  font-family: "Poppins";
+  
+}
+
+.sent-2 {
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
 
 .desc {
   background: grey;
 }
 
+.desc .para{
+    background-color: blue;
+}
+
 .desc .para {
   justify-content: center;
   align-items: center;
+}
+
+.desc .para p{
+    word-wrap: break-word;
 }
 
 
