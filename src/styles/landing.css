@@ -1,18 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Parisienne&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-
 *{
   margin: 0;
   padding: 0;
 }
 
 
-#landing {
-  /*background: linear-gradient(83.21deg, #000000, #434343); */
+.bg{
   height: 100%;
-  width: 100vw;
+  width: 100%;
+  position: absolute;
+  background-image: url("../assets/goodpic.svg");
+  filter: brightness(60%) blur(2px);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  
 }
+
+
 
 #header {
   display: flex;
@@ -20,47 +26,20 @@
   align-items: center;
   padding: 25px 8%;
 }
-.bg {
-  animation: slide 3s ease-in-out infinite alternate;
-  background-image: linear-gradient(-60deg, #050505 50%, #434343 50%);
-  bottom: 0;
-  left: -50%;
-  opacity: 0.5;
-  position: fixed;
-  right: -50%;
-  top: 0;
-  z-index: -1;
-}
 
-.bg2 {
-  animation-direction: alternate-reverse;
-  animation-duration: 4s;
-}
 
-.bg3 {
-  animation-duration: 5s;
-}
-
-@keyframes slide {
-  0% {
-    transform: translateX(-25%);
-  }
-  100% {
-    transform: translateX(25%);
-  }
-}
 
 .links {
   display: flex;
   font-weight: 600;
-  font-size: 16.5px;
+  font-size: 15px;
   gap: 30px;
   padding-right: 25px;
 }
 
 .links a {
   text-decoration: none;
-  color: antiquewhite;
+  color: #151922;
   font-family: "Poppins";
   position: relative;
 }
@@ -72,7 +51,7 @@
   bottom: -8px;
   width: 0;
   height: 3px;
-  background: antiquewhite;
+  background: #151922;
   border-radius: 4px;
   transition: all ease-in 0.4s;
 }
@@ -86,86 +65,105 @@
 
 #logo a {
   text-decoration: none;
-  color: antiquewhite;
+  color: #151922;
   font-family: "Parisienne";
   font-size: 25px;
+  font-weight: 400;
 }
 
 .hero {
   width: 100%;
-  height: 500px;
-  background: green;
-  gap: 10px;
-  padding: 20px 0%;
+  height: 550px;
+  padding: 10px 0%;
   display: flex;
   justify-content: center;
   align-items: center;
+  backdrop-filter: invert(60%);
 }
 
 .my-img{
     width: 50%;
     height:100%;
-    background-color: aqua;
 }
 
 
 .my-img img{
   height: 100%;
   width: 100%;
+  border-radius: 70px;
   background-position: center;
+  filter: brightness(80%);
   background-repeat: none;
 }
 
 .desc{
     width: 50%;
     height: 100%;
+    display: flex;
     flex-direction: column;
-    gap: 10px;
-    color: antiquewhite;
+    justify-content: space-evenly;
+    color: whitesmoke;
 
 }
 .sent-1 {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1px;
-  color: antiquewhite;
+  align-items: baseline;
+  gap: 1rem;
 }
 
 .sent-1 p{
-    font-size: 20px;
+    font-size: 15.5px;
     font-weight: 400;
     font-family: "Poppins";
 }
 
 .sent-1 h2 {
-  color: antiquewhite;
-  font-size: 60px;
-  font-family: "Poppins";
+  color: white;
+  font-size: 100px;
+  font-family: "Send Flowers";
   
 }
 
 .sent-2 {
-    display: grid;
-    justify-content: center;
-    align-items: center;
+  display: grid;
+  align-items: center;
+}
+
+.sent-2 h1{
+  color: aliceblue;
+  font-size: 92px;
+  font-weight: 600;
 }
 
 .desc {
-  background: grey;
+  background: transparent;
+  margin-right: 70px;
+  padding-bottom: 3%;
+  color: #111111;
 }
 
-.desc .para{
-    background-color: blue;
-}
+
 
 .desc .para {
   justify-content: center;
   align-items: center;
 }
 
-.desc .para p{
+.para p{
     word-wrap: break-word;
+    font-size: 20px;
 }
+
+.social-media{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.linked-in a img{
+  size: 40px;
+}
+
+
 
 
