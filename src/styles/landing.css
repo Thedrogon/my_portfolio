@@ -160,10 +160,7 @@
   justify-content: space-evenly;
 }
 
-.linked-in a img{
-  size: 40px;
+.linked-in .github .leetcode{
+    background-position: center;
 }
-
-
-
 
